@@ -1,0 +1,17 @@
+<% @mountains.each do |mountain| %>
+
+<section>
+<p><button2><%= link_to(mountain.name, mountain_path(mountain.id)) %></button2><br>
+
+ has <%= pluralize(mountain.height, 'metre') %></p>
+
+<%= link_to('Edit Mountain', mountain_edit_path(mountain.id),:class => 'btn btn-success') %>
+
+  <%= button_to( 'Delete Mountain', mountain_delete_path(mountain.id),:class => 'btn btn-danger') %>
+
+
+</section>
+
+
+
+<% end %>

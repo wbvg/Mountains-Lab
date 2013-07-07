@@ -1,0 +1,9 @@
+<div class="form-unit">
+  <form method='post' action='<%= mountain_path(@mountain.id) %> '>
+    <input value=' <%= @mountain.name %>' type='text' name='mountain[name]'>
+    <input value=' <%= @mountain.image %>' type='text' name='mountain[image]'>
+    <input value=' <%= @mountain.country %>' type='text' name='mountain[country]'>
+    <input value=' <%= @mountain.height %>' type='text' name='mountain[height]'>
+    <button class="btn btn-success">Update</button>
+</form>
+</div>
